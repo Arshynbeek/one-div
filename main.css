@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.ff {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.ff::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+}
+
+.ff::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    right: 0;
+    bottom: 0;
+    background-color: orange;
+}
+
+.ss {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 100%;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.ss::before {
+    width: 400px;
+    height: 80px;
+    top: 20%;
+    content: "";
+    position: absolute;
+    background-color: orange;
+}
+
+.ss::after {
+    width: 400px;
+    height: 80px;
+    top: 60%;
+    content: "";
+    position: absolute;
+    background-color: orange;
+}
+
+.ll {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.ll::before {
+    width: 30%;
+    height: 70%;
+    left: 15%;
+    bottom: 15%;
+    content: "";
+    border-radius: 15px;
+    position: absolute;
+    background-color: cadetblue;
+}
+
+.ll::after {
+    width: 30%;
+    height: 35%;
+    right: 15%;
+    top: 15%;
+    content: "";
+    border-radius: 15px;
+    position: absolute;
+    background-color: cadetblue;
+}
